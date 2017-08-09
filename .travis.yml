@@ -5,4 +5,40 @@ language: java
 install: true
 
 script:
-- mvn --batch-mode clean install -Dembedded
+- mvn --batch-mode clean install -Dembedded -pl todo-app
+- mvn --batch-mode clean verify -Dembedded -pl sample-bakery
+- mvn --batch-mode clean verify -Dembedded -pl sample-javaee
+- mvn --batch-mode clean verify -Dembedded -pl sample-flightbooking
+- mvn --batch-mode clean verify -Dembedded -pl sample-greeting
+- mvn --batch-mode clean verify -Dembedded -pl sample-bookstore
+- mvn --batch-mode clean verify -Dembedded -pl sample-incident
+- mvn --batch-mode clean verify -Dembedded -pl sample-camel-context
+- mvn --batch-mode clean verify -Dembedded -pl sample-docker
+- mvn --batch-mode clean verify -Dembedded -pl sample-kubernetes
+- mvn --batch-mode clean verify -Dembedded -pl sample-cucumber
+- mvn --batch-mode clean verify -Dembedded -pl sample-cucumber-spring
+- mvn --batch-mode clean verify -Dembedded -pl sample-cucumber-spring2
+- mvn --batch-mode clean verify -Dembedded -pl sample-annotation-config
+- mvn --batch-mode clean verify -Dembedded -pl sample-javaconfig
+- mvn --batch-mode clean verify -Dembedded -pl sample-mail
+- mvn --batch-mode clean verify -Dembedded -pl sample-http
+- mvn --batch-mode clean verify -Dembedded -pl sample-http-loadtest
+- mvn --batch-mode clean verify -Dembedded -pl sample-http-static-response
+- mvn --batch-mode clean verify -Dembedded -pl sample-https
+- mvn --batch-mode clean verify -Dembedded -pl sample-rmi
+- mvn --batch-mode clean verify -Dembedded -pl sample-dataprovider
+- mvn --batch-mode clean verify -Dembedded -pl sample-xhtml
+- mvn --batch-mode clean verify -Dembedded -pl sample-xml
+- mvn --batch-mode clean verify -Dembedded -pl sample-json
+- mvn --batch-mode clean verify -Dembedded -pl sample-databind
+- mvn --batch-mode clean verify -Dembedded -pl sample-oxm
+- mvn --batch-mode clean verify -Dembedded -pl sample-jms
+- mvn --batch-mode clean verify -Dembedded -pl sample-dynamic-endpoints
+- mvn --batch-mode clean verify -Dembedded -pl sample-binary
+- mvn --batch-mode clean verify -Dembedded -pl sample-soap
+- mvn --batch-mode clean verify -Dembedded -pl sample-soap-attachment
+- mvn --batch-mode clean verify -Dembedded -pl sample-soap-wssecurity
+- mvn --batch-mode clean verify -Dembedded -pl sample-soap-wsaddressing
+- mvn --batch-mode clean verify -Dembedded -pl sample-soap-ssl
+- mvn --batch-mode clean verify -Dembedded -pl sample-soap-static-response
+- mvn --batch-mode clean verify -Dembedded -pl sample-jdbc
